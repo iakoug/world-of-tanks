@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+   
+    background-image: url(../images/011.jpg);
+}
+td{
+    width: 100px;
+    height: 20px;
+}
+
+#back{
+    width: 450px;
+    height: 320px;
+    margin: auto;
+
+}
+#rank{
+    width: 510px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 120px;
+    font-family: "JOKERMAN";
+    color: red;
+
+}
+#bc{
+    font-size: 10px;
+    font-family: "JOKERMAN";
+}
+#RankBack{
+    width: 450px;
+}
+
+#RankList{
+    padding-left: 30px;
+    width: 400px;
+    font-family: "微软雅黑";
+    color: whitesmoke;
+   
+}
+.st {
+    list-style-type:upper-roman;
+}
+.botton4{
+    /*position:relative;*/
+    bottom:40px;
+    /*margin-left:80px;*/
+    height:50px;
+    width:160px;
+    background:darkred;
+    border-radius: 5px;
+    font-size:20px;
+    font-family: "楷体";
+    color:white;
+    box-shadow: 2px 2px 2px 2px 'white';
+}
+#butt{
+    width: 350px;
+    float: right;    
+}

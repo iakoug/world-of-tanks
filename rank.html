@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/rank_css.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <div id="rank">
+            RANK <span id="bc">Of&ensp;Battle&ensp;City</span>   
+        </div>
+        <div id="back">
+            <div id="RankBack">
+                <div id="RankList">   
+                </div>
+            </div> 
+        </div> 
+        <div id="butt">
+           <a href="BattleCity.html"><input type="button" class="botton4" value="再来一局" ></a> 
+        </div>
+  <script type="text/javascript" src="./node_modules/jquery/jquery-3.1.0.min.js"></script>  
+  <script src='./node_modules/handlebars/dist/handlebars.min.js'></script>         
+  <script>
+    onload = function (){
+        $.ajax({
+        url: './ranklist.json',
+        data: {},
+        dataType: 'text',
+        success: function ( jsonData ) {
+            jsonData = JSON.parse( jsonData );
+            //console.log(typeof jsonData);
+            var html = '<table  class="st">';
+        html+='<tr>';
+                html+='<td class="ls">'+'排名'+'</td>'+'<td class="ls">'+'姓名'+'</td>'+'<td class="ls">'+'分数'+'</td>';
+        html+='</tr>';
+        for (var j in jsonData.jsonData) {
+           // console.log(jsonData.jsonData)
+            var obj = jsonData.jsonData[j];
+            
+            if(j==0){
+                html += '<tr >';
+                 html += '<td class="ls">' +'★★★' +'</td>'+'<td>'+ obj.username + '</td>' + '<td class="ls">' + obj.score + '</td>';
+            }else{
+                if(j==1){
+                    html += '<td class="ls">' + '★★' +'</td>'+'<td>'+  obj.username + '</td>' + '<td class="ls">' + obj.score + '</td>';
+                }else{
+                    if(j==2){
+                        html += '<td class="ls">' +'★'+'</td>'+'<td>'+ obj.username + '</td>'+ '<td class="ls">' + obj.score + '</td>';
+                        html += '</tr >';
+                    }else{
+                        html += '<tr >';
+                        html += '<td class="ls">'+'☆'+'</td>'+'<td>' + obj.username + '</td>'+ '<td class="ls">' + obj.score + '</td>';
+                    }
+                }               
+            } 
+            html += '</tr >';     
+        }
+        html += '</table >';
+        $('#RankList').append(html);
+    },
+    error: function(err) {
+        // 测试信息
+        console.log(err);
+    } 
+    });
+    };
+    </script>
+    </body>
+</html>

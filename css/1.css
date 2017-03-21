@@ -1,0 +1,99 @@
+#demo{
+    background:url("../images/011.jpg");
+    overflow-x: hidden;
+}
+ #d1{
+     width:100%;
+     height:500px;
+     margin:auto;
+     margin-top:250px;
+}
+#d2{
+    width:430px;
+    height:65px;
+    font-size:30px;
+    color:white;
+    text-align: center;
+    line-height: 65px;
+    margin:auto;
+    background:black;
+}
+#d3,#d4,#d5{
+    height:43px;
+    width:430px;
+    margin:auto;
+}
+.viewbutton,.viewbutton span.hover{
+/*    display: block;*/
+    width:430px;
+    height:43px;
+    background-image:url("../images/%E6%B8%90%E5%8F%987.PNG");
+    text-indent:-9999px;
+}
+.viewbutton1,.viewbutton1 span.hover{
+/*    display: block;*/
+    width:430px;
+    height:43px;
+    background-image:url("../images/%E6%B8%90%E5%8F%986.PNG");
+    text-indent:-9999px;
+}
+.viewbutton2,.viewbutton2 span.hover{
+/*    display: block;*/
+    width:430px;
+    height:43px;
+    background-image:url("../images/%E6%B8%90%E5%8F%985.PNG");
+    text-indent:-9999px;
+}
+.viewbutton,.viewbutton1,.viewbutton2 {
+    float: left;
+    position:relative;
+    margin:auto;
+    background-position: top left;
+}
+.viewbutton span.hover,.viewbutton1 span.hover,.viewbutton2 span.hover{		
+    position: absolute;
+    background-position: bottom left;
+}
+#d0>li{
+            width: 150px;
+            height:40px;
+            line-height: 40px;
+            list-style-type: none;
+            border: 2px solid #808080;
+            margin-top: 50px;
+            margin-left: 80px;
+            padding-left: 20px;
+            font-size: 20px;
+            position: absolute;
+            top: -10px;
+            background: black;
+        }
+        a{text-decoration: none;
+            color: #d3d3d3;
+        }
+        #d0>li>ul{
+            margin: 0px;
+            padding: 0px;
+            width: 170px;
+            border: 2px solid #808080;
+            border-bottom: none;
+            list-style-type: none;
+            position: relative;
+            left: -22px;
+            display: none;
+        }
+        #d0>li>ul>li{
+            margin: 0px;
+            padding: 0px;
+            width: 150px;
+            height:40px;
+            line-height: 40px;
+            border-bottom: 2px solid #808080;
+            list-style-type: none;
+            padding-left: 20px;
+            font-size: 20px;
+            background: black;
+            
+        }
+        a:hover{color: #fa8072;}
+        #d0 li:hover ul{display: block;}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/2.css">
+    <script type="text/javascript">
+        var b=true;
+        function $$(id)
+        {
+            return document.getElementById(id);
+        }
+        function check()
+        {
+            return check1();
+        }
+        function check1()
+        {
+            if($$("userpass").value!=$$("testpass").value)
+                {
+                    $$("err_pass").innerHTML="两次输入的密码不一致！";
+                    return false;
+                }
+            else
+            {
+                $$("err_pass").innerHTML="";
+                return true;
+            }
+        }
+    </script>>
+</head>
+<body id="regin">
+   <div>
+      <div id="dd">
+      <canvas id="mycanvas" width="1360" height="10" style="border:1px; border-top-left-radius:5px; border-top-right-radius:5px;margin-top:150px;"></canvas>
+       </div>
+      <div class="d1">
+        <div class="d2">
+            <a href="index.html"><input class="botton1" type="button" value="  登   陆  "></a>
+            <a href="reg.html"><input class="botton2" type="button" value=" 立 即 注 册 "></a>
+            <a href="qrlogin.html"><input class="botton2" type="button" value=" 二维码登陆 "></a>
+        </div>
+        <form class="d3" action="05.html">
+           <lable for="userid">&nbsp;账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号&nbsp;:</lable>
+            <input type="text" id="userid" placeholder="请输入账号" required oninvalid="setCustomValidity('账号不能为空！')" oninput="setCustomValidity('')">
+            <br>
+            <lable for="userpass">&nbsp;密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp;:</lable>
+            <input type="password" id="userpass" required oninvalid="setCustomValidity('密码不能为空！')" oninput="setCustomValidity('')">
+            <br>
+            <lable for="testpass">&nbsp;验证密码:</lable>
+            <input type="password" id="testpass" required oninvalid="setCustomValidity('验证密码不能为空！')" oninput="setCustomValidity('')">
+            <span id="err_pass"></span>
+            <br>
+            <div id="regdiv">
+            <input class="reg" type="submit" onclick="return check()" value="立即注册">
+            </div>
+        </form>
+        <div id="d4">
+            welcome to battle city
+          </div>
+      </div>
+  </div>
+  <script type="text/javascript">
+      var c=document.getElementById("mycanvas");
+      cxt=c.getContext("2d");
+      var grd=cxt.createLinearGradient(0,0,1690,10);
+      grd.addColorStop(0,"black");
+      grd.addColorStop(0.5,"darkred");
+      grd.addColorStop(1,"black");
+      cxt.fillStyle=grd;
+      cxt.fillRect(0,0,1690,10);
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>注册成功</title>
+    <link rel="stylesheet" href="css/2.css">
+</head>
+<body id="regin">
+   <div>
+    <div id="d">
+      <canvas id="mycanvas" width="1360" height="10" style="border:1px; border-top-left-radius:5px; border-top-right-radius:5px;margin-top:171px;"></canvas>
+       </div>
+      <div class="d1">
+        <div class="d2">
+            <a href="index.html"><input class="botton1" type="button" value="  登   陆  "></a>
+            <a href="reg.html"><input class="botton2" type="button" value=" 立 即 注 册 "></a>
+            <a href="qrlogin.html"><input class="botton2" type="button" value=" 二维码登陆 "></a>
+        </div>
+        <form class="d3" action="03.html">
+            <div id="d5">
+                <p class="p1">注册成功</p>
+            </div>
+            <input type="submit" class="button5" value=" 确 定 ">  
+        </form>
+        <div id="d4">
+            welcome to battle city
+          </div>
+      </div>
+  </div>
+  <script type="text/javascript">
+      var c=document.getElementById("mycanvas");
+      cxt=c.getContext("2d");
+      var grd=cxt.createLinearGradient(0,0,1690,10);
+      grd.addColorStop(0,"black");
+      grd.addColorStop(0.5,"darkred");
+      grd.addColorStop(1,"black");
+      cxt.fillStyle=grd;
+      cxt.fillRect(0,0,1690,10);
+  </script>
+</body>
+</html>
