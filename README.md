@@ -1,7 +1,20 @@
-# Ô­Éújs±àÒëµÄÒ»¿îÌ¹¿ËÊÀ½çÍøÒ³ÓÎÏ·
+### `world-of-tanks`
+**The  web version of `World of Tanks`**
 
-+enter½øÈëÓÎÏ·
-+¿Õ¸ñ·¢Éä×Óµ¯
-+ÉÏÏÂ×óÓÒ¼ü½øĞĞÒÆ¶¯
-*ÀÏ³²µÄÇ½ÌåÒÑ¾­È«²¿ÉèÖÃÎªÌúÇ½£¬¿É×ÔĞĞ´ò¿ªstage.jsÎÄ¼ş×ÔĞĞ¸ü¸Ä£¬ÔİÊ±Íê³ÉÇ°Èı¸ö¹Ø¿¨*
-*»ı·ÖËùÔÚÍøÒ³ÓÉÓÚÊ¹ÓÃµÄÊÇÒì²½ÇëÇó¼ÙÊı¾İËùÒÔĞèÒªserver»·¾³·ñÔò¿ÉÄÜ¿´²»µ½ÄÚÈİ*
+### Bootup
+```bash
+# yarn chrome ğŸ’
+yarn start
+```
+
+### Keyboard shortcuts
+- Shot: `Blankspace`
+- Move: `â†‘ â†“ â† â†’`
+- Pause/Continue: `Enter`
+
+### Timeline
+2016/12 - 2017/3
+
+### Mode
+- The lair section has been changed to an `iron wall`.
+- The firing mode is `single shot`Â·
